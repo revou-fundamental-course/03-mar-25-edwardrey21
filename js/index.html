@@ -27,20 +27,56 @@
             <br>
             <br>
 
+
         <!--Ini untuk teks pengenalan-->
+
             <h1>Hi <span id="nama-auto"> </span>, Welcome to Webiste!</h1>
+            <label for="nameauto">Nama Anda</label>
+
+            <div class="auto-container">
+
+                <div>
+                    <input type="text" id="nameauto" placeholder="Masukkan nama Anda ..">
+                </div>
+
+                <div>
+                    <button type= "button" onclick="updateName()">Submit</button>
+                </div>
+
+
+            </div>
+
             <br>
+
+        <!--Ini untuk slideshow banner-->
 
             <div>
 
                 <img
                     class="img-slideshow"
-                    src=""
+                    src="..\js\assets\banner1.png"
+                    alt="banner1"
                 />
+
+                <img
+                class="img-slideshow"
+                src="..\js\assets\banner2.png"
+                alt="banner2"
+                />
+
+                <img
+                class="img-slideshow"
+                src="..\js\assets\banner3.png"
+                alt="banner3"
+                />
+
 
             </div>
 
-            <h3>Our Facilitation</h3>
+            <br>
+            <br>
+            
+            <h2>Our Facilitation</h2>
             <div class="fac-container">
                 <div class="facility">
                     <img src="..\js\assets\teacher.png" alt="proffesional teacher">
@@ -59,7 +95,7 @@
             </div>
             
             <br>
-            <h3>Message Us</h3>
+            <h2>Message Us</h2>
             <div class="msg-container">
             
             <!--Ini Container untuk form message us-->
