@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        
+        <title>My Website</title>
+
+        <link rel="stylesheet" href="../css/styles.css">
+
+    </head>
+
+        <body>
+        
+            
+        <!--Ini Header paling atas-->
+            <div class="header-nav">
+                <a href="#message-us">Message Us</a>
+                <a href="#achv">Achievement</a>
+                <a href="#our-prof">Our Profile</a>
+                <a class= "active" href="#home">Home</a>
+              </div>
+
+            
+            <br>
+            <br>
+            <br>
+            <br>
+
+        <!--Ini untuk teks pengenalan-->
+            <h1>Hi <span id="nama-auto"> </span>, Welcome to Webiste!</h1>
+            <br>
+
+            <div>
+
+                <img
+                    class="img-slideshow"
+                    src=""
+                />
+
+            </div>
+
+            <h3>Our Facilitation</h3>
+            <div class="fac-container">
+                <div class="facility">
+                    <img src="..\js\assets\teacher.png" alt="proffesional teacher">
+                    <p>Professional Teacher</p>
+                </div>
+                
+                <div class="facility">
+                    <img src="..\js\assets\sportfield.png" alt="sport field">
+                    <p>Sport Field</p>
+                </div>
+
+                <div class="facility">
+                    <img src="..\js\assets\teacher.png" alt="classroom">
+                    <p>Classroom</p>
+                </div>  
+            </div>
+            
+            <br>
+            <h3>Message Us</h3>
+            <div class="msg-container">
+            
+            <!--Ini Container untuk form message us-->
+                <div class="form-container">
+
+                    <!--Ini Form Message Us-->
+                    <form onsubmit="tampilkanOutput(event)"> <!--event ini untuk mencegah refresh di website-->
+
+                        <!--Input Nama (placeholder)-->
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="firstname" placeholder="Your name..">
+                        
+                        <!--Input Tanggal Lahir (calendar date)-->
+                        <label for="birthdate">Tanggal Lahir</label>
+                        <input type="date" id="birthdate" name="birthday">
+
+                        <!--Input Jenis Kelamin (radio button)-->
+                        <label for="gender">Jenis Kelamin</label>
+                        <div class="radio-butt">
+                            <input type="radio" id="laki" name="jeniskelamin" value="lk">
+                            <label for="laki">Laki-Laki</label>
+                            <input type="radio" id="pr" name="jeniskelamin" value="pr">
+                            <label for="pr">Perempuan</label>
+                        </div>
+
+                        <!--Input Pesan (textarea)-->
+                        <label for="pesan">Pesan</label>
+                        <input type="textarea" id="pesan" name="pesan" placeholder="Pesan yang ingin disampaikan ..">
+
+                        <!--Button Submit-->
+                        <button type= "button" onclick="tampilkanOutput(event)">Kirim Pesan</button>
+
+
+                    </form>
+
+                </div>
+
+
+
+            <!--Ini container hasil summary input-->
+                <div class="summary-container">
+                    <h3>Summary Message Us</h3>
+                    <p id="outputNama"></p>
+                    <p id="outputLahir"></p>
+                    <p id="outputJeniskelamin"></p>
+                    <p id="outputPesan"></p>
+                </div>
+
+            </div>
+
+            <!--JavaScript-->
+
+            <script src="..\js\script.js"></script>
+
+
+        </body>
+
+
+</html>
